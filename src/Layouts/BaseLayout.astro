@@ -1,5 +1,5 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import Nav from "../components/Nav.astro";
 const { pageTitle } = Astro.props;
 ---
 
@@ -12,7 +12,7 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
-    <Navbar />
+    <Nav />
     <h1>{pageTitle}</h1>
     <slot />
   </body>
