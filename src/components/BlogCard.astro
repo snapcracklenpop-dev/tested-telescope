@@ -1,15 +1,21 @@
 ---
+const { title, url, pubDate, description } = Astro.props;
 ---
 
-<a href="/posts/post-1">
-  <div class="card">
-    <h2>Fill Post Title</h2>
-    <p>December 8, 2022</p>
-    <p>Here is where the subtitle will fill</p>
-  </div>
-</a>
+<!-- Dynamically load post title, date and subtile into card... -->
+<li>
+  <a href={url}>
+    <div class="card">
+      <h2>{title}</h2>
+      <p>{pubDate}</p>
+      <p>{description}</p>
+    </div>
+  </a>
+</li>
 
+<!-- styles  -->
 <style>
+  li{list-style: none;}
   a {
     text-decoration: none;
     color: white;
@@ -17,14 +23,13 @@
 
   .card {
     border-radius: 6px;
-    background-color: #141212 ;
-    transition:.2s;
-  
-    padding: 10px 20px ;
+    background-color: #141212;
+    transition: 0.4s;
+    margin-top: 20px;
+    padding: 10px 20px;
   }
-  .card:hover{
-    background-color:#040303;
-    padding-left:  30px;
+  .card:hover {
+    background-color: #040303;
+    padding-left: 30px;
   }
- 
 </style>
