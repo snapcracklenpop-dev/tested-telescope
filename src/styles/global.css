@@ -5,6 +5,9 @@
   font-weight: 200 900;
   font-stretch: 75% 125%;
 }
+*{
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Mona Sans";

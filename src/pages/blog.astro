@@ -1,11 +1,13 @@
 ---
 import BaseLayout from "../Layouts/BaseLayout.astro";
-
+import BlogCard from "../components/BlogCard.astro";
 const pageTitle = "Blog";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <p>Here you'll find links to each post:</p>
-  <a href="/posts/post-1">post 1!</a>
+  <BlogCard/>
+
+  <!-- <a href="/posts/post-1">post 1!</a> -->
 </BaseLayout>
 
