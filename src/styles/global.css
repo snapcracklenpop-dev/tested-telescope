@@ -6,6 +6,8 @@
   font-stretch: 75% 125%;
 }
 
-body{
-  font-family: sans-serif;
+body {
+  font-family: "Mona Sans";
+  background-color: #292524;
+  color: white;
 }
