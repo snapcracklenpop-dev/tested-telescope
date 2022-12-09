@@ -18,6 +18,8 @@
 --eerie-black-card-hover:#272b26 ;
 }
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -29,7 +31,9 @@ body {
 
 
 a{
-  margin-left: 1rem;
+
+  transition: .2s;
+  
 }
 a:link {
   color: var(--eggshell);
@@ -40,7 +44,8 @@ a:visited {
 }
 a:hover {
   color: var(--spanish-gray-hover);
-  text-decoration: underline;
+  
+  
 }
 
 
