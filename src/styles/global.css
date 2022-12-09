@@ -5,7 +5,9 @@
   font-weight: 200 900;
   font-stretch: 75% 125%;
 }
-
+html{
+  font-size: 62.5%;
+}
 :root{
   /* CSS HEX */
 --eerie-black: #1E201Dff;
@@ -52,3 +54,5 @@ a:hover {
 li {
   list-style: none;
 }
+
+
