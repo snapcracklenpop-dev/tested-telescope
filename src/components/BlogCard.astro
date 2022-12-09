@@ -1,6 +1,6 @@
 ---
 const { title, url, pubDate, description } = Astro.props;
-import "../styles/global.css"
+import "../styles/global.css";
 ---
 
 <!-- Dynamically load post title, date and subtile into card... -->
@@ -16,17 +16,18 @@ import "../styles/global.css"
 
 <!-- styles  -->
 <style>
-  li{list-style: none;}
+  
   a {
     text-decoration: none;
-    color: var(--eerie-black);;
+    color: var(--eerie-black);
   }
-
+  a:hover{
+    text-decoration: none;
+  }
   .card {
     border-radius: 6px;
-    background-color:var(--eerie-black-card);
+    background-color: var(--eerie-black-card);
     color: var(--eggshell);
-    
 
     transition: 0.4s;
     margin-top: 20px;

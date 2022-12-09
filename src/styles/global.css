@@ -26,3 +26,24 @@ body {
   background-color: var(--eerie-black);
   color: var(--eggshell);
 }
+
+
+a{
+  margin-left: 1rem;
+}
+a:link {
+  color: var(--eggshell);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--eggshell);
+}
+a:hover {
+  color: var(--spanish-gray-hover);
+  text-decoration: underline;
+}
+
+
+li {
+  list-style: none;
+}
