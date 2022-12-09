@@ -16,22 +16,23 @@ const { pageTitle } = Astro.props;
 
   <body>
     <Header />
-    <div>
+    <main class="main">
       <h1>{pageTitle}</h1>
       <slot />
-    </div>
+    </main>
     <Footer/>
   </body>
 </html>
 
 <style>
+
   body{
     border:.7rem solid var(--spanish-gray);
     margin: 4rem;
   }
-  div {
-    max-width: 50%;
+  main {
+    
     margin: 4rem auto;
-    padding: 3rem;
+    padding: 0 20rem;
   }
 </style>

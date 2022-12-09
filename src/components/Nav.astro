@@ -2,20 +2,23 @@
 import "../styles/global.css";
 ---
 
-<div>
-  <a href="/">Home</a>
-  <a href="/about/">About</a>
-  <a href="/blog">Blog</a>
+<div class="nav-links-container" >
+  <a class="nav-links" href="/">Home</a>
+  <a class="nav-links" href="/about/">About</a>
+  <a class="nav-links" href="/blog">Blog</a>
 </div>
 
 <style>
-  div {
+  div{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
   }
   a{
+    font-size: 5rem;
+    font-style: oblique;
+    font-weight: 900;
     margin-left: 4rem;
   }
 </style>
