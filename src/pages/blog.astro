@@ -6,12 +6,11 @@ const pageTitle = "Blog";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+
   <p>Here you'll find links to each post:</p>
   <ul>
     {allPosts.map((post) => <BlogCard url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate} description = {post.frontmatter.description} />)}
   </ul>
-  
-
   
 </BaseLayout>
 
