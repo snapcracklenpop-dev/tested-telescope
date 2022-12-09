@@ -60,9 +60,10 @@ li {
   .header {
     flex-direction: column;
     align-items: center;
+    padding:1rem 3rem ;
   }
 
   .main {
-    padding: 0 15rem;
+    padding: 0 2rem;
   }
 }
