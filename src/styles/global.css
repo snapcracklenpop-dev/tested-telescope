@@ -5,12 +5,24 @@
   font-weight: 200 900;
   font-stretch: 75% 125%;
 }
+
+:root{
+  /* CSS HEX */
+--eerie-black: #1E201Dff;
+--eggshell: #EFE9D7ff;
+--spanish-gray: #999791ff;
+
+/* alts  */
+--spanish-gray-hover: #787771;
+--eerie-black-card: #2c2f2a;
+--eerie-black-card-hover:#272b26 ;
+}
 *{
   box-sizing: border-box;
 }
 
 body {
   font-family: "Mona Sans";
-  background-color: #292524;
-  color: white;
+  background-color: var(--eerie-black);
+  color: var(--eggshell);
 }
