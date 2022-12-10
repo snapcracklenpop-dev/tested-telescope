@@ -8,7 +8,7 @@ import "../styles/global.css";
   <a href={url}>
     <div class="card">
       <h2>{title}</h2>
-      <p>{pubDate}</p>
+      <span class="post-date" >{pubDate}</span>
       <p>{description}</p>
     </div>
   </a>
@@ -16,7 +16,10 @@ import "../styles/global.css";
 
 <!-- styles  -->
 <style>
-  
+  p{
+    margin-top: 1rem;
+    
+  }
   a {
     text-decoration: none;
     color: var(--eerie-black);
