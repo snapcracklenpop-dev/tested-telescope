@@ -45,18 +45,27 @@ a:hover {
   color: var(--spanish-gray-hover);
 }
 
-li {
-  list-style: none;
+/* targeting styling on a post is odd */
+ol{
+  margin-top: 1rem;
 }
-/* FONT SIZES */
-/*  */
+li{
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+/* text formatting */
+
 h1{font-size: 4.8rem;}
 h2{
   font-size: 2.8rem;
   margin-top:2rem;
 }
 h3{
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+
 }
 p{
   font-size: 1.8rem;
