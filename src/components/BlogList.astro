@@ -1,0 +1,18 @@
+---
+import BlogCard from '../components/BlogCard.astro'
+const { title, list } = Astro.props
+---
+
+<ul>
+  <h2>{title}</h2>
+  {
+    list.map((post) => (
+      <BlogCard
+        url={post.url}
+        title={post.frontmatter.title}
+        pubDate={post.frontmatter.pubDate}
+        description={post.frontmatter.description}
+      />
+    ))
+  }
+</ul>
