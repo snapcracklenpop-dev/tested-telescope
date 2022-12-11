@@ -1,16 +1,58 @@
 ---
 import BaseLayout from "../Layouts/BaseLayout.astro";
 import BlogCard from "../components/BlogCard.astro";
-const allPosts = await Astro.glob('../pages/posts/*.md')
+const codePosts = await Astro.glob("../pages/posts/*.md");
+const illustrationPosts = await Astro.glob("../pages/posts-illustration/*.md");
 const pageTitle = "Blog";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-
   <p>Here you'll find links to each post:</p>
-  <ul>
-    {allPosts.map((post) => <BlogCard url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate} description = {post.frontmatter.description} />)}
-  </ul>
-  
+  <div class="post-lists" >
+    <ul>
+      <h2>Coding Posts</h2>
+      {
+        codePosts.map((post) => (
+          <BlogCard
+            url={post.url}
+            title={post.frontmatter.title}
+            pubDate={post.frontmatter.pubDate}
+            description={post.frontmatter.description}
+          />
+        ))
+      }
+    </ul>
+
+    <ul>
+      <h2>Illustration posts</h2>
+      {
+        illustrationPosts.map((post) => (
+          <BlogCard
+            url={post.url}
+            title={post.frontmatter.title}
+            pubDate={post.frontmatter.pubDate}
+            description={post.frontmatter.description}
+          />
+        ))
+      }
+    </ul>
+  </div>
 </BaseLayout>
 
+
+<!-- not sure if  -is:global-  is best practice here, but it successfully targets the main padding without affecting the other pages-->
+<style is:global>
+  .main {
+    padding: 0;
+  }
+  .post-lists{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+</style>

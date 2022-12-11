@@ -31,6 +31,13 @@ body {
   color: var(--eggshell);
 }
 
+main {
+  margin: 4rem auto;
+  padding: 0 20rem;
+  max-width: 120rem;
+  min-height: 45vh;
+}
+
 a {
   transition: 0.2s;
 }
@@ -44,6 +51,8 @@ a:visited {
 a:hover {
   color: var(--spanish-gray-hover);
 }
+
+
 
 /* targeting styling on a post is odd */
 ol{
